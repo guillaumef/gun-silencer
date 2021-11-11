@@ -1,9 +1,9 @@
 
-#  The ultimate parametric silencer/moderator for airgun / bbgun / airsoft
+#  The ultimate parametric silencer / moderator for airgun / bbgun / airsoft
 
 ## Project description
 
-This design allows to generate a unique soundtrap
+This design allows to generate a unique baffle
 silencer exactly fitting your gun/rifle:
 
 - with external tube or not (like carbon fiber tube)
@@ -29,7 +29,10 @@ Baffle design is up to you and you can tweak it: Angle, Volume, Number, Progress
 If you are using a brim for adhesion, the internal curves will be painfull to clean, I
 added a nice option (silencer\_brim\_close) which allows to use Cura "Brim > Only on the outside".
 
-I use ABS filament, 100% infill, an Ultimaker 2.
+I use ABS filament, 100% infill, no support!, an Ultimaker 2.
+
+The thread output from the printer is pretty good if your printer is efficient in handling a no support.
+Tapping the thread is of course the best way to produce a regular path.
 
 
 ## Usage
