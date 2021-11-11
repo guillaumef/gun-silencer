@@ -31,8 +31,8 @@ added a nice option (silencer\_brim\_close) which allows to use Cura "Brim > Onl
 
 I use ABS filament, 100% infill, no support!, an Ultimaker 2.
 
-The thread output from the printer is pretty good if your printer is efficient in handling a no support.
-Tapping the thread is of course the best way to produce a regular path.
+The thread output (even in mode=1) from the printer is pretty good if your printer is efficient.
+Tapping the thread is of course the best way to produce a clean path after print.
 
 
 ## Usage
