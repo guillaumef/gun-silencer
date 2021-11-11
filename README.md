@@ -18,8 +18,7 @@ silencer exactly fitting your gun/rifle:
 
 <img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example3.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
 
-<img src="https://cdn.thingiverse.com/assets/30/95/fe/ea/1c/large_display_img2.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
-<img src="https://cdn.thingiverse.com/assets/e1/37/1d/84/46/large_display_IMG_20211111_213247_2.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
+<img src="https://cdn.thingiverse.com/assets/30/95/fe/ea/1c/large_display_img2.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" /><img src="https://cdn.thingiverse.com/assets/e1/37/1d/84/46/large_display_IMG_20211111_213247_2.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
 
 ### Concept
 
