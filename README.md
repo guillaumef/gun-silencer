@@ -1,7 +1,7 @@
 
 #  The ultimate parametric silencer/moderator for airgun / bbgun / airsoft
 
-### Project description
+## Project description
 
 This design allows to generate a unique soundtrap
 silencer exactly fitting your gun/rifle:
@@ -32,12 +32,12 @@ added a nice option (silencer\_brim\_close) which allows to use Cura "Brim > Onl
 I use ABS filament, 100% infill, an Ultimaker 2.
 
 
-### Usage
+## Usage
 
 You need openscad and a text editor.
 
 
-#### Linux
+### Linux
 Simply install your distribution packages: openscad, curl, make
 
 
@@ -61,24 +61,49 @@ Run openscad with the local libs directory.
 OPENSCADPATH=`pwd`/libs openscad ./silencer.scad
 ```
 
-Edit silencer.scad to fit your needs.
+Edit scad file (see section "Files" below)
+
 Generate your STLs and print !
 
 
-#### Windows
+### Windows
 
 Should be simple but... I don't have Microsoft Windows.
 OpenSCAD is available. It should work perfectly.
 http://openscad.org/downloads.html
 
-#### MacOS
+### MacOS
 
 Same as Windows.
 http://openscad.org/downloads.html
 
 
-### Configurable items
+## Files:
 
+### silencer.scad
+defines the mode, the part to work on and include the configuration file.
+```
+/* Processing options */
+silencer_mode                   = 1;    /*
+                                           1 = two parts (if your 3d printer is efficient)
+                                           2 = three parts to print (threaded part printed vertically)
+                                         */
+
+silencer_part                   = 0;    /*
+                                           0 = demo parts
+                                           1 = first part
+                                           2 = second part
+
+                                           in mode=2, the two sides are the same.
+                                         */
+
+/* Configuration of the silencer : Millimeters */
+//include <conf/20UN12-180-28_30_WL.scad>;
+//include <conf/20UN12-160-51.scad>;
+include <conf/20UN12-160-28_30_NL.scad>;
+```
+
+### conf/xxx.scad   (the active include)
 ```
 /* Configuration of the silencer : Millimeters */
 
@@ -117,11 +142,9 @@ silencer_brim_close             = 0.4;  /* Integrate structure closing to allow 
                                            It saves you from the painful process of removing the brim
                                            from the soundtraps.
                                          */
-
-
 /* / End of Configuration */
 ```
 
 
-### Happy? [tip me ;)](https://www.paypal.com/paypalme/GuillaumePlayground)
+## Happy? [tip me ;)](https://www.paypal.com/paypalme/GuillaumePlayground)
 
