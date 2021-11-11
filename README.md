@@ -46,11 +46,30 @@ OPENSCADPATH=`pwd`/libs openscad ./silencer.scad
 Edit silencer.scad to fit your needs.
 Generate your STLs and print !
 
+
+#### Concept
+
+Baffle design is up to you and you can tweak it: Angle, Volume, Number, Progressivity.
+
+
+#### Printing
+
+If you are using a brim for adhesion, the internal curves will be painfull to clean, I
+added a nice option (silencer\_brim\_close) which allows to use Cura "Brim > Only on the outside".
+
+I use ABS filament, 100% infill, an Ultimaker 2.
+
+
 #### Windows
 
-Should be simple also... I don't have Microsoft Windows.
-You just need silencer.scad file and deploy the libs dependancies
-specified in libs/Makefile.
+Should be simple but... I don't have Microsoft Windows.
+OpenSCAD is available. It should work perfectly.
+http://openscad.org/downloads.html
+
+#### MacOS
+
+Same as Windows.
+http://openscad.org/downloads.html
 
 
 ### Configurable items
