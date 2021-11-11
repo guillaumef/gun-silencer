@@ -25,13 +25,15 @@ Simply install your distribution packages: openscad, curl, make
 
 Clone the repository:
 ```
-# git clone https://github.com/guillaumef/gun-silencer
+# git clone --recursive https://github.com/guillaumef/gun-silencer
 
 ```
 
-Retrieve dependancies:
+Retrieve dependancies - if you did not use git '--recurvive' previously:
 ```
-# cd gun-silencer/libs
+# cd gun-silencer
+#
+# cd libs
 # make
 # cd ..
 ```
@@ -59,9 +61,12 @@ specified in libs/Makefile.
 silencer_len                    = 180;  /* printed part length */
 silencer_tube_int_dia           =  28;  /* tube (provided) internal diameter */
 silencer_tube_ext_dia           =  30;  /* tube (provided) external diameter. Can be equal to int_dia */
-silencer_foam_thickness         =   2;  /* foam or air chamber between the tube (provided) and this part
-                                           0 for straight tube
-                                         */
+silencer_tube_barrel_dia	=  28;	/* inferior to silencer_tube_int_dia if needed, in contact with
+					   the barrel */
+silencer_foam_thickness		=   0;	/* foam or air chamber between the tube (provided) and this part
+					   0  : for straight tube.
+					   >0 : activates the lips part.
+
 silencer_struct_thickness       = 1.5;  /* Global structure thickness */
 
 silencer_thread_len             =  12;  /* threaded part of the rifle */
