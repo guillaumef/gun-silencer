@@ -44,6 +44,11 @@ OPENSCADPATH=`pwd`/libs openscad ./silencer.scad
 Edit silencer.scad to fit your needs.
 Generate your STLs and print !
 
+#### Windows
+
+Should be simple also... I don't have Microsoft Windows.
+You just need silencer.scad file and deploy the libs dependancies
+specified in libs/Makefile.
 
 
 ### Configurable items
