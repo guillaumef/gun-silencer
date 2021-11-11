@@ -14,6 +14,8 @@ silencer exactly fitting your gun/rifle:
 - all metric ou unf threads
 - 2 printing modes (depending on your printer efficiency)
 
+<img src="https://github.com/guillaumef/gun-silencer/blob/master/examples/example1.png" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" /> <img src="https://github.com/guillaumef/gun-silencer/blob/master/examples/example2.png" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" /> <img src="https://github.com/guillaumef/gun-silencer/blob/master/examples/example3.png" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
+
 ### Usage
 
 You need openscad and a text editor.

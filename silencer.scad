@@ -31,7 +31,7 @@ silencer_mode			= 1;	/*
 					   2 = three parts to print (threaded part printed vertically)
 					 */
 
-silencer_part			= 1;	/*
+silencer_part			= 0;	/*
 					   0 = demo parts
 					   1 = first part
 					   2 = second part
