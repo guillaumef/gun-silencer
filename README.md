@@ -16,6 +16,20 @@ silencer exactly fitting your gun/rifle:
 
 <img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example1.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" /> <img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example2.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" /> <img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example3.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
 
+
+### Concept
+
+Baffle design is up to you and you can tweak it: Angle, Volume, Number, Progressivity.
+
+
+### Printing
+
+If you are using a brim for adhesion, the internal curves will be painfull to clean, I
+added a nice option (silencer\_brim\_close) which allows to use Cura "Brim > Only on the outside".
+
+I use ABS filament, 100% infill, an Ultimaker 2.
+
+
 ### Usage
 
 You need openscad and a text editor.
@@ -47,19 +61,6 @@ OPENSCADPATH=`pwd`/libs openscad ./silencer.scad
 
 Edit silencer.scad to fit your needs.
 Generate your STLs and print !
-
-
-#### Concept
-
-Baffle design is up to you and you can tweak it: Angle, Volume, Number, Progressivity.
-
-
-#### Printing
-
-If you are using a brim for adhesion, the internal curves will be painfull to clean, I
-added a nice option (silencer\_brim\_close) which allows to use Cura "Brim > Only on the outside".
-
-I use ABS filament, 100% infill, an Ultimaker 2.
 
 
 #### Windows
