@@ -14,7 +14,8 @@ silencer exactly fitting your gun/rifle:
 - all metric ou unf threads
 - 2 printing modes (depending on your printer efficiency)
 
-<img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example1.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" /> <img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example2.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" /> <img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example3.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
+<img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example1.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" /> <img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example2.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
+<img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example3.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
 
 
 ### Concept
