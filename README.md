@@ -1,7 +1,7 @@
 
-#  The ultimate parametric silencer/moderator for airgun / bbgun / airsoft
+#  The ultimate parametric silencer / moderator for airgun / bbgun / airsoft
 
-### Project description
+## Project description
 
 This design allows to generate a unique baffle
 silencer exactly fitting your gun/rifle:
@@ -18,6 +18,11 @@ silencer exactly fitting your gun/rifle:
 
 <img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/example3.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
 
+<img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/open1.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" /> <img src="https://github.com/guillaumef/gun-silencer/blob/main/examples/open6.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
+
+
+<img src="https://cdn.thingiverse.com/assets/30/95/fe/ea/1c/large_display_img2.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" /><img src="https://cdn.thingiverse.com/assets/e1/37/1d/84/46/large_display_IMG_20211111_213247_2.jpg" width="300" alt="silencer moderator airgun bbgun airsoft" align="center" />
+
 
 ### Concept
 
@@ -29,15 +34,18 @@ Baffle design is up to you and you can tweak it: Angle, Volume, Number, Progress
 If you are using a brim for adhesion, the internal curves will be painfull to clean, I
 added a nice option (silencer\_brim\_close) which allows to use Cura "Brim > Only on the outside".
 
-I use ABS filament, 100% infill, an Ultimaker 2.
+I use ABS filament, 100% infill, no support!, an Ultimaker 2.
+
+The thread output from the printer (even in mode=1, printed flat) is pretty good if your printer is efficient.
+Tapping the thread is of course the best way to produce a clean path after print.
 
 
-### Usage
+## Usage
 
 You need openscad and a text editor.
 
 
-#### Linux
+### Linux
 Simply install your distribution packages: openscad, curl, make
 
 
@@ -61,24 +69,49 @@ Run openscad with the local libs directory.
 OPENSCADPATH=`pwd`/libs openscad ./silencer.scad
 ```
 
-Edit silencer.scad to fit your needs.
+Edit scad file (see section "Files" below)
+
 Generate your STLs and print !
 
 
-#### Windows
+### Windows
 
 Should be simple but... I don't have Microsoft Windows.
 OpenSCAD is available. It should work perfectly.
 http://openscad.org/downloads.html
 
-#### MacOS
+### MacOS
 
 Same as Windows.
 http://openscad.org/downloads.html
 
 
-### Configurable items
+## Files:
 
+### silencer.scad
+defines the mode, the part to work on and include the configuration file.
+```
+/* Processing options */
+silencer_mode                   = 1;    /*
+                                           1 = two parts (if your 3d printer is efficient)
+                                           2 = three parts to print (threaded part printed vertically)
+                                         */
+
+silencer_part                   = 0;    /*
+                                           0 = demo parts
+                                           1 = first part
+                                           2 = second part
+
+                                           in mode=2, the two sides are the same.
+                                         */
+
+/* Configuration of the silencer : Millimeters */
+//include <conf/20UN12-180-28_30_WL.scad>;
+//include <conf/20UN12-160-51.scad>;
+include <conf/20UN12-160-28_30_NL.scad>;
+```
+
+### conf/xxx.scad   (the active include)
 ```
 /* Configuration of the silencer : Millimeters */
 
@@ -142,10 +175,9 @@ silencer_brim_close		= 0.4;	/* Integrate structure closing to allow the printing
 					   from the baffles.
 					 */
 
-
 /* / End of Configuration */
 ```
 
 
-### Happy? [tip me ;)](https://www.paypal.com/paypalme/GuillaumePlayground)
+## Happy? [tip me ;)](https://www.paypal.com/paypalme/GuillaumePlayground)
 
