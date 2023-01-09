@@ -55,7 +55,10 @@ include <conf/20UN12-open-150-50.scad>;
 
 
 /* Mode processing */
-if (silencer_mode == 1) {
+if (silencer_mode == 0) {
+	s_silencer();
+}
+else if (silencer_mode == 1) {
 	if (! silencer_part) {
 		/* Demo */
 		rotate([0,90,0]) {
